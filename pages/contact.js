@@ -103,7 +103,7 @@ export default function Contact() {
           <div className="md:flex md:items-center">
             <div className="md:w-1/3">
               <button
-                className="shadow bg-blue-400 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                className="shadow bg-gray-500 hover:bg-gray-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                 type="button"
                 onClick={handleMessage}
               >
