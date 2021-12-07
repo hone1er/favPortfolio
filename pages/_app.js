@@ -2,27 +2,37 @@ import styles from "../styles/Home.module.css";
 import "../styles/globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
+const menu = [
+  { title: "Home", path: "/" },
+  { title: "Gallery", path: "/gallery" },
+  { title: "About", path: "/about" },
+  { title: "Contact", path: "/contact" },
+];
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
   return (
     <>
       <div className="w-full flex flex-row items-center justify-between p-4 font-serif shadow">
-        <h1 className=" text-2xl sm:text-3xl font-bold text-">
+        <h1 className=" text-2xl sm:text-3xl font-bold text-gray-700">
           <Link href="/">Favian Audieri</Link>
         </h1>
         <ul className="flex flex-col sm:flex-row  border-l-2 sm:border-none pl-2 sm:pl-0">
-          <li className="p-2 text-base sm:text-lg font-semibold">
-            {" "}
-            <Link href="/gallery">Gallery</Link>
-          </li>
-          <li className="p-2 text-base sm:text-lg font-semibold">
-            {" "}
-            <Link href="/about">About</Link>
-          </li>
-          <li className="p-2 text-base sm:text-lg font-semibold">
-            {" "}
-            <Link href="/">Contact</Link>
-          </li>
+          {menu.map((item, index) => {
+            return (
+              <li
+                key={index}
+                className={`p-2 text-base sm:text-lg font-semibold text-gray-500 hover:text-gray-700 ${
+                  router.pathname === item.path && "text-gray-700"
+                }`}
+              >
+                {" "}
+                <Link href={item.path}>{item.title}</Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <Component {...pageProps} />

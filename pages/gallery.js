@@ -17,7 +17,7 @@ export default function Gallery() {
       </Head>
       <div className="container m-auto w-full font-serif">
         <h1 className="text-center text-6xl font-light mt-12 mb-8">Gallery</h1>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           <Image
             className="object-center "
             loader={myLoader}
@@ -60,7 +60,7 @@ export default function Gallery() {
         <br />
         <br />
         <div className="flex flex-row flex-wrap flex-grow items-center justify-center">
-          <div className="cursor-pointer m-2 p-6 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded-lg ">
+          <div className="cursor-pointer m-2 p-12 shadow  font-sans ">
             <Link href="">
               <Image
                 className="object-center  h-auto"
@@ -73,10 +73,10 @@ export default function Gallery() {
               />
             </Link>
             <Link href="">
-              <p className="text-center pt-4 ">Business Cards</p>
+              <p className="text-center pt-4 ">Clothing</p>
             </Link>
           </div>
-          <div className="cursor-pointer m-2 p-6 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded-lg">
+          <div className="cursor-pointer m-2 p-12 shadow  font-sans">
             <Link href="">
               <Image
                 className="object-center  h-auto"
@@ -92,7 +92,7 @@ export default function Gallery() {
               <p className="text-center pt-4 ">Promotional Material</p>
             </Link>
           </div>
-          <div className="cursor-pointer m-2 p-6 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded-lg ">
+          <div className="cursor-pointer m-2 p-12 shadow  font-sans ">
             <Link href="">
               <Image
                 className="object-center  h-auto"
@@ -108,7 +108,7 @@ export default function Gallery() {
               <p className="text-center pt-4 ">Digital Art</p>
             </Link>
           </div>
-          <div className="cursor-pointer m-2 p-6 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded-lg ">
+          <div className="cursor-pointer m-2 p-12 shadow  font-sans ">
             <Link href="">
               <Image
                 className="object-center  h-auto"
@@ -121,23 +121,7 @@ export default function Gallery() {
               />
             </Link>
             <Link href="">
-              <p className="text-center pt-4 ">Physical Art</p>
-            </Link>
-          </div>
-          <div className="cursor-pointer m-2 p-6 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded-lg ">
-            <Link href="">
-              <Image
-                className="object-center  h-auto"
-                loader={myLoader}
-                src="https://source.unsplash.com/random/525x525"
-                width={500}
-                height={500}
-                alt="check"
-                placeholder="blurDataURL"
-              />
-            </Link>
-            <Link href="">
-              <p className="text-center pt-4 ">Photos</p>
+              <p className="text-center pt-4 ">Memes</p>
             </Link>
           </div>
         </div>

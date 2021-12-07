@@ -27,9 +27,7 @@ export default function About() {
             />
           </div>
           <div className="max-w-md ">
-            <h1 className="text-3xl sm:text-5xl font-semibold">
-              Fav is a creatoooor
-            </h1>
+            <h1 className="text-5xl font-semibold">Fav is a creatoooor</h1>
             <p className="text-xl sm:text-2xl mt-8 text-gray-900 font-medium">
               These are words about the dude that made the stuff you see on this
               website. You either like it or you don&apos;t....like my dick
