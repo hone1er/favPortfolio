@@ -7,7 +7,6 @@ import { useRouter } from "next/router";
 const menu = [
   { title: "Home", path: "/" },
   { title: "Gallery", path: "/gallery" },
-  { title: "About", path: "/about" },
   { title: "Contact", path: "/contact" },
 ];
 
