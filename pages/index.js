@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>Fav's Portfolio</title>
+        <title>Fav&apos;s Portfolio</title>
         <meta name="description" content="Favian Audieri's art portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
