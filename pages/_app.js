@@ -3,7 +3,6 @@ import "../styles/globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
 const menu = [
   { title: "Home", path: "/" },
   { title: "Gallery", path: "/gallery" },
@@ -16,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <div className="w-full flex flex-row items-center justify-between p-4 font-serif shadow">
         <h1 className=" text-2xl sm:text-3xl font-bold text-gray-700">
-          <Link href="/">Favian Audieri</Link>
+          <Link href="/">EBMUD</Link>
         </h1>
         <ul className="flex flex-col sm:flex-row  border-l-2 sm:border-none pl-2 sm:pl-0">
           {menu.map((item, index) => {
