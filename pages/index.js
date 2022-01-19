@@ -33,7 +33,16 @@ export default function About() {
 
       <main className="p-0 font-serif min-h-screen">
         <div className="flex items-center justify-around flex-col-reverse lg:flex-row min-h-screen">
-          <div className="max-w-screen-md">
+          <motion.div
+            className="max-w-screen-md"
+            initial={{ scale: 0.5, opacity: 0, y: 450 }}
+            animate={{
+              scale: 1,
+              opacity: 1,
+              y: 0,
+              transition: { duration: 2, ease: "easeInOut" },
+            }}
+          >
             <Image
               className="object-center "
               loader={myLoader}
@@ -43,7 +52,7 @@ export default function About() {
               alt="check"
               placeholder="blurDataURL"
             />
-          </div>
+          </motion.div>
           <div className="max-w-md ">
             {creator && (
               <motion.h1
@@ -60,16 +69,24 @@ export default function About() {
                 ))}
               </motion.h1>
             )}
-            <p className="text-xl sm:text-2xl mt-8 text-gray-900 font-medium">
+            <motion.p
+              className="text-xl sm:text-2xl mt-8 text-gray-900 font-medium"
+              initial={{ rotateX: 90 }}
+              animate={{ rotateX: 0, transition: { delay: 0.2, duration: 1 } }}
+            >
               These are words about the dude that made the stuff you see on this
               website. You either like it or you don&apos;t....like my dick
-            </p>
-            <p className="text-sm sm:text-base mt-4 text-gray-700 font-thin font-sans">
+            </motion.p>
+            <motion.p
+              className="text-sm sm:text-base mt-4 text-gray-700 font-thin font-sans"
+              initial={{ rotateX: 90 }}
+              animate={{ rotateX: 0, transition: { delay: 0.2, duration: 1 } }}
+            >
               If you have more words and shit they can go here and it&apos;ll be
               cool because people will know things about you. Even though
               realistically they probably won&apos;t even read this far. It
               makes the webpage look a little more filled out.
-            </p>
+            </motion.p>
           </div>
         </div>
       </main>
