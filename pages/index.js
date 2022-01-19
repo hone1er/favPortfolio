@@ -41,7 +41,7 @@ export default function About() {
               opacity: 1,
               x: 0,
               rotateY: 0,
-              transition: { duration: 2, ease: "easeInOut" },
+              transition: { delay: 0.25, duration: 2, ease: "easeInOut" },
             }}
           >
             <Image
