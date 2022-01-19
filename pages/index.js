@@ -35,11 +35,12 @@ export default function About() {
         <div className="flex items-center justify-around flex-col-reverse lg:flex-row min-h-screen">
           <motion.div
             className="max-w-screen-md"
-            initial={{ scale: 0.5, opacity: 0, y: 450 }}
+            initial={{ scale: 0, opacity: 0, x: 650, rotateY: 90 }}
             animate={{
               scale: 1,
               opacity: 1,
-              y: 0,
+              x: 0,
+              rotateY: 0,
               transition: { duration: 2, ease: "easeInOut" },
             }}
           >
