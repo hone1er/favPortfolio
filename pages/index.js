@@ -31,8 +31,8 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="p-0 font-serif min-h-screen">
-        <div className="flex items-center justify-around flex-col-reverse lg:flex-row min-h-screen">
+      <main className="min-h-screen p-0 font-serif">
+        <div className="flex min-h-screen flex-col-reverse items-center justify-around lg:flex-row">
           <motion.div
             className="max-w-screen-md"
             initial={{ scale: 0, opacity: 0, x: 650, rotateY: 90 }}
@@ -57,7 +57,7 @@ export default function About() {
           <div className="max-w-md ">
             {creator && (
               <motion.h1
-                className="text-5xl font-semibold whitespace-pre-line"
+                className="whitespace-pre-line text-5xl font-semibold"
                 initial="hidden"
                 whileInView="show"
                 variants={container}
@@ -71,7 +71,7 @@ export default function About() {
               </motion.h1>
             )}
             <motion.p
-              className="text-xl sm:text-2xl mt-8 text-gray-900 font-medium"
+              className="mt-8 text-xl font-medium text-gray-900 sm:text-2xl"
               initial={{ rotateX: 90 }}
               animate={{ rotateX: 0, transition: { delay: 0.2, duration: 1 } }}
             >
@@ -79,7 +79,7 @@ export default function About() {
               website. You either like it or you don&apos;t....like my dick
             </motion.p>
             <motion.p
-              className="text-sm sm:text-base mt-4 text-gray-700 font-thin font-sans"
+              className="mt-4 font-sans text-sm font-thin text-gray-700 sm:text-base"
               initial={{ rotateX: 90 }}
               animate={{ rotateX: 0, transition: { delay: 0.2, duration: 1 } }}
             >

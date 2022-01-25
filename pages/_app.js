@@ -13,16 +13,16 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <>
-      <div className="w-full flex flex-row items-center justify-between p-4 font-serif shadow">
-        <h1 className=" text-2xl sm:text-3xl font-bold text-gray-700">
+      <div className="flex w-full flex-row items-center justify-between p-4 font-serif shadow">
+        <h1 className=" text-2xl font-bold text-gray-700 sm:text-3xl">
           <Link href="/">EBMUD</Link>
         </h1>
-        <ul className="flex flex-col sm:flex-row  border-l-2 sm:border-none pl-2 sm:pl-0">
+        <ul className="flex flex-col border-l-2  pl-2 sm:flex-row sm:border-none sm:pl-0">
           {menu.map((item, index) => {
             return (
               <li
                 key={index}
-                className={`p-2 text-base sm:text-lg font-semibold text-gray-500 hover:text-gray-700 ${
+                className={`p-2 text-base font-semibold text-gray-500 hover:text-gray-700 sm:text-lg ${
                   router.pathname === item.path && "text-gray-700"
                 }`}
               >

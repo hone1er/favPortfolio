@@ -27,7 +27,7 @@ export default function Gallery() {
   });
 
   let imgDiv = (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+    <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
       {images}
     </div>
   );
@@ -38,12 +38,12 @@ export default function Gallery() {
         <title>Gallery</title>
       </Head>
       <div className="container m-auto w-full font-serif">
-        <h1 className="text-center text-8xl font-light mt-16 mb-24">Gallery</h1>
+        <h1 className="mt-16 mb-24 text-center text-8xl font-light">Gallery</h1>
 
-        <h2 className="text-center text-4xl font-light mt-24 mb-12 font-sans">
+        <h2 className="mt-24 mb-12 text-center font-sans text-4xl font-light">
           Promotional Material
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-white p-4 shadow">
+        <div className="grid grid-cols-1 bg-white p-4 shadow md:grid-cols-2 lg:grid-cols-3">
           <div className="flex items-center">
             <Image
               className="object-contain"
@@ -132,10 +132,10 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <h2 className="text-center text-4xl font-light mt-24 mb-12 font-sans">
+        <h2 className="mt-24 mb-12 text-center font-sans text-4xl font-light">
           Clothing Designs
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-white p-4 shadow">
+        <div className="grid grid-cols-1 bg-white p-4 shadow md:grid-cols-2 lg:grid-cols-3">
           <div className="flex items-center">
             <Image
               className="object-contain"
@@ -160,10 +160,10 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <h2 className="text-center text-4xl font-light mt-24 mb-8 font-sans">
+        <h2 className="mt-24 mb-8 text-center font-sans text-4xl font-light">
           Digital Media
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-white p-4 shadow">
+        <div className="grid grid-cols-1 bg-white p-4 shadow md:grid-cols-2 lg:grid-cols-3">
           <div className="flex items-center">
             <Image
               className="object-contain"
