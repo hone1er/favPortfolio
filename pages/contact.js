@@ -15,7 +15,7 @@ export default function Contact() {
     <div>
       <Head>
         <title>Contact</title>
-        <meta name="description" content="Favian Audieri's art portfolio" />
+        <meta name="description" content="EBMUD's art portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

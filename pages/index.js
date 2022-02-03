@@ -27,7 +27,7 @@ export default function About() {
     <div>
       <Head>
         <title>EBMUD&apos;s Portfolio</title>
-        <meta name="description" content="Favian Audieri's art portfolio" />
+        <meta name="description" content="EBMUD's art portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
